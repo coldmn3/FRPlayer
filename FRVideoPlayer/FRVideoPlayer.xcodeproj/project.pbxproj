@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F0EB5DD5629C6A014482B3CF /* Pods_FRVideoPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00915023F1D78664F6395720 /* Pods_FRVideoPlayer.framework */; };
+		F3CF9E531F433B2D00C03CF5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3CF9E521F433B2D00C03CF5 /* main.m */; };
+		F3CF9E561F433B2D00C03CF5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3CF9E551F433B2D00C03CF5 /* AppDelegate.m */; };
+		F3CF9E591F433B2D00C03CF5 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3CF9E581F433B2D00C03CF5 /* ViewController.m */; };
+		F3CF9E5C1F433B2D00C03CF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CF9E5A1F433B2D00C03CF5 /* Main.storyboard */; };
+		F3CF9E5E1F433B2D00C03CF5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3CF9E5D1F433B2D00C03CF5 /* Assets.xcassets */; };
+		F3CF9E611F433B2D00C03CF5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3CF9E5F1F433B2D00C03CF5 /* LaunchScreen.storyboard */; };
+		F3CF9E6A1F433CC100C03CF5 /* IJKMediaFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CF9E691F433CC100C03CF5 /* IJKMediaFramework.framework */; };
+		F3CF9E761F43D9A600C03CF5 /* FRVideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3CF9E751F43D9A600C03CF5 /* FRVideoView.m */; };
+		F3CF9E7A1F43DBC000C03CF5 /* FRVideoControlView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3CF9E791F43DBC000C03CF5 /* FRVideoControlView.m */; };
+		F3CF9E7C1F44033E00C03CF5 /* FRVideoPlayer.bundle in Resources */ = {isa = PBXBuildFile; fileRef = F3CF9E7B1F44033E00C03CF5 /* FRVideoPlayer.bundle */; };
+		F3CF9E841F440A2F00C03CF5 /* UIImage+FRBundle.m in Sources */ = {isa = PBXBuildFile; fileRef = F3CF9E831F440A2F00C03CF5 /* UIImage+FRBundle.m */; };
+		F3CF9E8A1F440D6800C03CF5 /* UIView+FRFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = F3CF9E891F440D6800C03CF5 /* UIView+FRFrame.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00915023F1D78664F6395720 /* Pods_FRVideoPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FRVideoPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		49E90D155FF01C4C64DF3915 /* Pods-FRVideoPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FRVideoPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-FRVideoPlayer/Pods-FRVideoPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		E16F54F798E849040B1EA229 /* Pods-FRVideoPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FRVideoPlayer.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FRVideoPlayer/Pods-FRVideoPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+		F3CF9E4E1F433B2D00C03CF5 /* FRVideoPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FRVideoPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3CF9E521F433B2D00C03CF5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F3CF9E541F433B2D00C03CF5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F3CF9E551F433B2D00C03CF5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		F3CF9E571F433B2D00C03CF5 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		F3CF9E581F433B2D00C03CF5 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		F3CF9E5B1F433B2D00C03CF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F3CF9E5D1F433B2D00C03CF5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F3CF9E601F433B2D00C03CF5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F3CF9E621F433B2D00C03CF5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3CF9E691F433CC100C03CF5 /* IJKMediaFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = IJKMediaFramework.framework; sourceTree = "<group>"; };
+		F3CF9E731F43D9A600C03CF5 /* FRVideoControlViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRVideoControlViewDelegate.h; sourceTree = "<group>"; };
+		F3CF9E741F43D9A600C03CF5 /* FRVideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRVideoView.h; sourceTree = "<group>"; };
+		F3CF9E751F43D9A600C03CF5 /* FRVideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRVideoView.m; sourceTree = "<group>"; };
+		F3CF9E771F43D9EB00C03CF5 /* FRVideoControlViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRVideoControlViewProtocol.h; sourceTree = "<group>"; };
+		F3CF9E781F43DBC000C03CF5 /* FRVideoControlView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FRVideoControlView.h; sourceTree = "<group>"; };
+		F3CF9E791F43DBC000C03CF5 /* FRVideoControlView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FRVideoControlView.m; sourceTree = "<group>"; };
+		F3CF9E7B1F44033E00C03CF5 /* FRVideoPlayer.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = FRVideoPlayer.bundle; sourceTree = "<group>"; };
+		F3CF9E7D1F44079300C03CF5 /* FRVideoPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FRVideoPlayer.h; sourceTree = "<group>"; };
+		F3CF9E821F440A2F00C03CF5 /* UIImage+FRBundle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+FRBundle.h"; sourceTree = "<group>"; };
+		F3CF9E831F440A2F00C03CF5 /* UIImage+FRBundle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+FRBundle.m"; sourceTree = "<group>"; };
+		F3CF9E881F440D6800C03CF5 /* UIView+FRFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FRFrame.h"; sourceTree = "<group>"; };
+		F3CF9E891F440D6800C03CF5 /* UIView+FRFrame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FRFrame.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3CF9E4B1F433B2D00C03CF5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3CF9E6A1F433CC100C03CF5 /* IJKMediaFramework.framework in Frameworks */,
+				F0EB5DD5629C6A014482B3CF /* Pods_FRVideoPlayer.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		224657A5502CE11350BC24B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E16F54F798E849040B1EA229 /* Pods-FRVideoPlayer.debug.xcconfig */,
+				49E90D155FF01C4C64DF3915 /* Pods-FRVideoPlayer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6DB4FAF2E78F07C38FEDADC2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				00915023F1D78664F6395720 /* Pods_FRVideoPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3CF9E451F433B2D00C03CF5 = {
+			isa = PBXGroup;
+			children = (
+				F3CF9E501F433B2D00C03CF5 /* FRVideoPlayer */,
+				F3CF9E4F1F433B2D00C03CF5 /* Products */,
+				224657A5502CE11350BC24B1 /* Pods */,
+				6DB4FAF2E78F07C38FEDADC2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F3CF9E4F1F433B2D00C03CF5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3CF9E4E1F433B2D00C03CF5 /* FRVideoPlayer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3CF9E501F433B2D00C03CF5 /* FRVideoPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				F3CF9E7B1F44033E00C03CF5 /* FRVideoPlayer.bundle */,
+				F3CF9E721F43D9A600C03CF5 /* Classes */,
+				F3CF9E681F433CC100C03CF5 /* Frameworks */,
+				F3CF9E541F433B2D00C03CF5 /* AppDelegate.h */,
+				F3CF9E551F433B2D00C03CF5 /* AppDelegate.m */,
+				F3CF9E571F433B2D00C03CF5 /* ViewController.h */,
+				F3CF9E581F433B2D00C03CF5 /* ViewController.m */,
+				F3CF9E5A1F433B2D00C03CF5 /* Main.storyboard */,
+				F3CF9E5D1F433B2D00C03CF5 /* Assets.xcassets */,
+				F3CF9E5F1F433B2D00C03CF5 /* LaunchScreen.storyboard */,
+				F3CF9E621F433B2D00C03CF5 /* Info.plist */,
+				F3CF9E511F433B2D00C03CF5 /* Supporting Files */,
+			);
+			path = FRVideoPlayer;
+			sourceTree = "<group>";
+		};
+		F3CF9E511F433B2D00C03CF5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3CF9E521F433B2D00C03CF5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F3CF9E681F433CC100C03CF5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3CF9E691F433CC100C03CF5 /* IJKMediaFramework.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3CF9E721F43D9A600C03CF5 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F3CF9E7E1F44098600C03CF5 /* Category */,
+				F3CF9E7D1F44079300C03CF5 /* FRVideoPlayer.h */,
+				F3CF9E741F43D9A600C03CF5 /* FRVideoView.h */,
+				F3CF9E751F43D9A600C03CF5 /* FRVideoView.m */,
+				F3CF9E781F43DBC000C03CF5 /* FRVideoControlView.h */,
+				F3CF9E791F43DBC000C03CF5 /* FRVideoControlView.m */,
+				F3CF9E731F43D9A600C03CF5 /* FRVideoControlViewDelegate.h */,
+				F3CF9E771F43D9EB00C03CF5 /* FRVideoControlViewProtocol.h */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F3CF9E7E1F44098600C03CF5 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				F3CF9E821F440A2F00C03CF5 /* UIImage+FRBundle.h */,
+				F3CF9E831F440A2F00C03CF5 /* UIImage+FRBundle.m */,
+				F3CF9E881F440D6800C03CF5 /* UIView+FRFrame.h */,
+				F3CF9E891F440D6800C03CF5 /* UIView+FRFrame.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3CF9E4D1F433B2D00C03CF5 /* FRVideoPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3CF9E651F433B2D00C03CF5 /* Build configuration list for PBXNativeTarget "FRVideoPlayer" */;
+			buildPhases = (
+				6C01877CDAD9A47D0B374C71 /* [CP] Check Pods Manifest.lock */,
+				F3CF9E4A1F433B2D00C03CF5 /* Sources */,
+				F3CF9E4B1F433B2D00C03CF5 /* Frameworks */,
+				F3CF9E4C1F433B2D00C03CF5 /* Resources */,
+				BECCDAB689C470266F39817E /* [CP] Embed Pods Frameworks */,
+				72335B6F9C737872E760FF99 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FRVideoPlayer;
+			productName = FRVideoPlayer;
+			productReference = F3CF9E4E1F433B2D00C03CF5 /* FRVideoPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3CF9E461F433B2D00C03CF5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = WFR;
+				TargetAttributes = {
+					F3CF9E4D1F433B2D00C03CF5 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 4BQED3KEQ2;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F3CF9E491F433B2D00C03CF5 /* Build configuration list for PBXProject "FRVideoPlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3CF9E451F433B2D00C03CF5;
+			productRefGroup = F3CF9E4F1F433B2D00C03CF5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3CF9E4D1F433B2D00C03CF5 /* FRVideoPlayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3CF9E4C1F433B2D00C03CF5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3CF9E7C1F44033E00C03CF5 /* FRVideoPlayer.bundle in Resources */,
+				F3CF9E611F433B2D00C03CF5 /* LaunchScreen.storyboard in Resources */,
+				F3CF9E5E1F433B2D00C03CF5 /* Assets.xcassets in Resources */,
+				F3CF9E5C1F433B2D00C03CF5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6C01877CDAD9A47D0B374C71 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		72335B6F9C737872E760FF99 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FRVideoPlayer/Pods-FRVideoPlayer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BECCDAB689C470266F39817E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FRVideoPlayer/Pods-FRVideoPlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3CF9E4A1F433B2D00C03CF5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3CF9E591F433B2D00C03CF5 /* ViewController.m in Sources */,
+				F3CF9E841F440A2F00C03CF5 /* UIImage+FRBundle.m in Sources */,
+				F3CF9E7A1F43DBC000C03CF5 /* FRVideoControlView.m in Sources */,
+				F3CF9E561F433B2D00C03CF5 /* AppDelegate.m in Sources */,
+				F3CF9E8A1F440D6800C03CF5 /* UIView+FRFrame.m in Sources */,
+				F3CF9E761F43D9A600C03CF5 /* FRVideoView.m in Sources */,
+				F3CF9E531F433B2D00C03CF5 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F3CF9E5A1F433B2D00C03CF5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3CF9E5B1F433B2D00C03CF5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F3CF9E5F1F433B2D00C03CF5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3CF9E601F433B2D00C03CF5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3CF9E631F433B2D00C03CF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F3CF9E641F433B2D00C03CF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3CF9E661F433B2D00C03CF5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E16F54F798E849040B1EA229 /* Pods-FRVideoPlayer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4BQED3KEQ2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FRVideoPlayer/Frameworks",
+				);
+				INFOPLIST_FILE = FRVideoPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.wufeiran.ios.FRVideoPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F3CF9E671F433B2D00C03CF5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 49E90D155FF01C4C64DF3915 /* Pods-FRVideoPlayer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4BQED3KEQ2;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/FRVideoPlayer/Frameworks",
+				);
+				INFOPLIST_FILE = FRVideoPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = me.wufeiran.ios.FRVideoPlayer;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3CF9E491F433B2D00C03CF5 /* Build configuration list for PBXProject "FRVideoPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3CF9E631F433B2D00C03CF5 /* Debug */,
+				F3CF9E641F433B2D00C03CF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3CF9E651F433B2D00C03CF5 /* Build configuration list for PBXNativeTarget "FRVideoPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3CF9E661F433B2D00C03CF5 /* Debug */,
+				F3CF9E671F433B2D00C03CF5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3CF9E461F433B2D00C03CF5 /* Project object */;
+}
