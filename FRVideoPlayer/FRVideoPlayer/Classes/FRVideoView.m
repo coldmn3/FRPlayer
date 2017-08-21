@@ -51,6 +51,64 @@
     self.backgroundColor = [UIColor greenColor];
     self.controlView = [[FRVideoControlView alloc] init];
     self.controlView.delegate = self;
+    
+    [self addNotifications];
+}
+
+- (void)addNotifications {
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(onStatusBarOrientationChange)
+                                                 name:UIApplicationDidChangeStatusBarOrientationNotification
+                                               object:nil];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self
+                                             selector:@selector(onDeviceOrientationChange)
+                                                 name:UIDeviceOrientationDidChangeNotification
+                                               object:nil];
+}
+
+#pragma mark - Notifications
+
+- (void)onDeviceOrientationChange {
+    UIDeviceOrientation newOrientation = [UIDevice currentDevice].orientation;
+    
+    NSLog(@"onDeviceOrientationChange new Orientation -> %@", @(newOrientation));
+    if (newOrientation == UIDeviceOrientationUnknown ||
+        newOrientation == UIDeviceOrientationFaceUp ||
+        newOrientation == UIDeviceOrientationFaceDown) {
+        return;
+    }
+    
+    switch (newOrientation) {
+        case UIDeviceOrientationPortraitUpsideDown: {
+            
+        }
+            break;
+        case UIDeviceOrientationPortrait: {
+            if (self.viewState == FRVideoViewStateFullscreen) {
+                [self toggleView];
+            }
+        }
+            break;
+        case UIDeviceOrientationLandscapeLeft: {
+            if (self.viewState == FRVideoViewStateWindowed) {
+                [self toggleView];
+            }
+        }
+            break;
+        case UIDeviceOrientationLandscapeRight: {
+            if (self.viewState == FRVideoViewStateWindowed) {
+                [self toggleView];
+            }
+        }
+            break;
+        default:
+            break;
+    }
+    
+}
+
+- (void)onStatusBarOrientationChange {
 }
 
 #pragma mark - Logics
